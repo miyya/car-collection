@@ -1,0 +1,43 @@
+/**  
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+*/
+
+/** lables style */
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+/** input tag style */
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+/** buttons style */
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+/** button hover style */
+button:hover {
+  background-color: #cfd8dc;
+}
+/** disabled button style */
+button:disabled {
+  background-color: #eee;
+  color: #ccc; 
+  cursor: auto;
+}

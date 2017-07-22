@@ -1,0 +1,60 @@
+<!-------------------------------------
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+--------------------------------------->
+<!----body panel--->
+<div class="panel-body">
+<div class="container">
+  <!----group panel--->
+  <div class="panel-group">
+    <div class="panel panel-default">
+    <!----panel heading--->
+      <div class="panel-heading">{{car.name}} Car Information!</div>
+      <div class="panel-body">
+      <!----*ngIF form--->
+       <div *ngIf="car">
+          <div>
+         		 <!----labele--->
+            	<label>ID: </label> 
+                <!----car id-->
+                <input [(ngModel)]="car.id" placeholder="id" class="form-control"  />
+          </div>
+          
+          <div >
+         		<!----car name text-->
+            	<label>Name: </label>
+                <!-------car name input ---------->
+            	<input [(ngModel)]="car.name" placeholder="name" class="form-control" />
+          </div>
+          
+           <br>
+           
+           <div class="form-group">
+           		<!----car name lable-->
+             	<label>Info: </label> 
+                <!----cars informarion text-area-->
+             	<textarea class="form-control"  rows="4" cols="90" [(ngModel)]="car.des" placeholder="des" >
+             	</textarea>
+            </div>
+
+            <div>
+                  <!----cars logo lable -->
+             	 <label>logo: </label> 
+                  <!----cars logo-->
+             	 <img src="{{car.img}}" width="160" height="100" />              
+            </div>
+           		 <!----save button--->
+          		<button (click)="save()" class="center-block">Save</button>
+                 <!----Back button--->
+         		<button (click)="goBack()">Back</button> 
+        	</div>
+	  </div>
+    </div>
+
+  </div>
+</div>
+</div>

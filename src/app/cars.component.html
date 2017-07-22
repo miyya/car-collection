@@ -1,0 +1,89 @@
+<!-------------------------------------
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+--------------------------------------->
+
+<h3  style=" text-align:center;font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif"> <u>Cars</u> <br><br></h3> <!----header--->
+
+<!----Add car pannel--->
+ <div class="col-xs-8 col-sm-4"> 
+ <div class="panel-group">
+    <div class="panel panel-default">
+      <!----panel heading--->
+      <div class="panel-heading">Add a car</div>
+      <div class="panel-body">      
+		<div>    
+   		<!----label name--->
+  		<label>Car name:</label> <input class="form-control" #carName />        
+  			<br>
+        <!----add button--->
+  		<button (click)="add(carName.value); carName.value=''"> 
+    	Add
+ 		</button>    
+		</div>
+     </div>
+    </div>
+ </div>
+</div>
+
+
+<!----view/delete car information panel--->
+<div class="col-xs-3 col-sm-3">
+<div class="panel-group">
+    <div class="panel panel-default">
+    <!----panel heading--->
+      <div class="panel-heading"> View/Delete Car</div>
+      <div class="panel-body">
+        <!----select car--->
+		<ul class="cars">
+  		<li *ngFor="let car of cars" (click)="onSelect(car)"
+      	[class.selected]="car === selectedCar">      
+    	<span class="badge">View</span>
+    	<span>{{car.name}}</span>
+        <!----Delete car--->
+    	<button class="delete"
+      	(click)="delete(car); $event.stopPropagation()">Delete</button>
+  		</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-3 col-sm-5">
+ <div class="panel-group">
+    <div class="panel panel-default">
+   	 <!----panel heading--->
+      <div class="panel-heading">Information: {{selectedCar.name}} </div>
+      <div class="panel-body">
+        <!----select car--->
+        <div *ngIf="selectedCar">
+    	<!----edit car details--->
+    	 <div align="right"> <button (click)="gotoDetail()">Edit Info</button></div>
+    	 <!----car heading--->
+  			 <h3 align="center">
+   	 		 <u>{{selectedCar.name | uppercase}} </u> 
+  			  </h3>
+    		  <br>
+    		  <div align="center">
+    	       <!-----car image--->
+    	  	  <img src="{{selectedCar.img}}" width="150" height="90"  />
+        	  </div>
+    		   <br>
+	  	      <div>
+     	      <!----car details--->
+   		      <p style="text-align:justify;">{{selectedCar.des}} </p>
+  			<br>
+			</div>
+ 			<!----vire car button--->
+  		</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

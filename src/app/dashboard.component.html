@@ -1,0 +1,26 @@
+<!-------------------------------------
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+--------------------------------------->
+<!-------callling to seach function---->
+<car-search></car-search>
+	<!----heading-->
+	<h3 style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif">Latest Cars <br><br></h3>
+		       <!----div calss grid pad--->
+		       <div class="grid grid-pad">
+					<!----displaying latest car with logo and car name--->
+  					<a *ngFor="let car of cars"  [routerLink]="['/detail', car.id]"  class="col-1-4">
+						<!----div for logo image--->
+    					<div class="module car" [style.background-image]="'url(' + car.img + ')'" [ngStyle]="{  'background-size': 'cover','background-repeat': 'no-repeat'} ">
+					<h4 style="align-content:center;"><br><br></h4>
+ 				</div>
+	<!----car name--->
+    <h4 style="text-align:center; color:#000000"> {{car.name}}</h4>
+    
+  </a>
+</div>
+

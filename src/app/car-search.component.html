@@ -1,0 +1,31 @@
+<!-------------------------------------
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+--------------------------------------->
+<div class="container" style="width:400px;">
+	<div class="row">
+        <div align="center">
+    		<!------Custome search input div -->
+            <div id="custom-search-input">
+                <div class="input-group">
+                	<!------Search box input -->
+                    <input type="text" class="form-control input-lg" #searchBox  (keyup)="search(searchBox.value)" placeholder="car search" />
+                     <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                          CC
+                        </button>
+                    </span>
+                </div>                
+               </div>
+               <!------calling to function to display search results -->
+            <div *ngFor="let car of cars | async"
+         (click)="gotoDetail(car)" class="search-result form-control"  >
+      {{car.name}}
+           </div>
+   </div>
+  </div>
+</div>

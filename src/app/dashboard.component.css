@@ -1,0 +1,82 @@
+/**  
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+*/
+
+/** class*='col-' style an agular css */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+/** class*='col-': last-of-type style an agular css */
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+/** a style an agular css */
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/** heading 3 style */
+h3 {
+  text-align: center; margin-bottom: 0;
+}
+/** heading 4 style */
+h4 {
+  position: relative;
+}
+/** grids style */
+.grid {
+  margin: 0;
+}
+/** colum 1-4 style */
+.col-1-4 {
+  width: 25%;
+}
+/** module class style */
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 220px;
+  min-width: 120px;
+  background-color: #607D8B;
+  border-radius: 2px;
+}
+/** module and hover style */
+.module:hover {
+  background-color: #EEE;
+  cursor: pointer;
+  color: #607d8b;
+}
+/** grid-pad class style */
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+/** media setting for 600px */
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 205px; }
+}
+/** media setting for 1024px */
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}

@@ -1,0 +1,60 @@
+/**  
+Author:  Ahmed Muneer
+SID:     S1203016285
+Program: MScIT Batch 2
+Intake:  Jan 2017
+Center:  UWE, Villa College
+Email:   Ahmed2.Muneer@live.uwe.ac.uk
+*/
+
+/** calss search result style */
+.search-result{
+	text-align:left;
+
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+/** calss search result hover style */
+.search-result:hover {
+  color: #2F2F2F;
+  background-color: #E9E9E9;
+}
+/** id search box style */
+#search-box{
+  width: 200px;
+  height: 20px;
+}
+/** id custom search  input style */
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+/** id custom search  input style */
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+/** id custom search  input button style */
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+/** id custom search  input button hover style */
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+/** id custom search input and glyphicon search style */
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
