@@ -1,5 +1,5 @@
 # car-collection
-Digital design task 3 | Ahmed Muneer | MScIT B2 | UWE | Villa College
+Digital Design and Development Task 3 | Ahmed Muneer | MScIT B2 | UWE | Villa College
 
 ## Author
 - Name: Ahmed Muneer
