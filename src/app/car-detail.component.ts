@@ -30,7 +30,7 @@ export class CarDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location
   ) {}
-//naviagte
+//navigate
   ngOnInit(): void {
     this.route.paramMap
       .switchMap((params: ParamMap) => this.carService.getCar(+params.get('id')))
