@@ -37,7 +37,6 @@ Digital Design and Development Task 3 | Ahmed Muneer | MScIT B2 | UWE | Villa Co
 
 ## Install npm packages
 
-> See npm and nvm version notes above
 
 Install the npm packages described in the `package.json` and verify that it works:
 
