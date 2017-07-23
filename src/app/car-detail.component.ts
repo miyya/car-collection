@@ -36,12 +36,12 @@ export class CarDetailComponent implements OnInit {
       .switchMap((params: ParamMap) => this.carService.getCar(+params.get('id')))
       .subscribe(car => this.car = car);
   }
-//save cr detail
+//save car detail
   save(): void {
     this.carService.update(this.car)
       .then(() => this.goBack());
   }
-//go abck navigation
+//go back navigation
   goBack(): void {
     this.location.back();
   }
